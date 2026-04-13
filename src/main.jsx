@@ -3,8 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './styles/main.css';
 import App from './App.jsx';
 
+import { BrowserRouter } from 'react-router';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter basename="/travel-agency">
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );
